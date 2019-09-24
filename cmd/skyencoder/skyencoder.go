@@ -34,7 +34,7 @@ var (
 	destPackage    = flag.String("package", "", "package name for the output; if not provided, defaults to the struct's package")
 	unexported     = flag.Bool("unexported", false, "don't export generated methods (always true if the struct is not an exported type)")
 	silent         = flag.Bool("silent", false, "disable all non-error log output")
-	noTest         = flag.Bool("no-test", false, "disable generating the _test.go file (test files require github.com/google/go-cmp/cmp and github.com/skycoin/encodertest)")
+	noTest         = flag.Bool("no-test", false, "disable generating the _test.go file (test files require github.com/google/go-cmp/cmp and github.com/SkycoinProject/encodertest)")
 )
 
 func usage() {

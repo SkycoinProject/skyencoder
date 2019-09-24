@@ -12,7 +12,7 @@ import (
 	"github.com/SkycoinProject/skycoin/src/cipher/encoder"
 	"github.com/google/go-cmp/cmp"
 	"github.com/google/go-cmp/cmp/cmpopts"
-	"github.com/skycoin/encodertest"
+	"github.com/SkycoinProject/encodertest"
 )
 
 func newEmptyMaxLenAllStruct1ForEncodeTest() *MaxLenAllStruct1 {
