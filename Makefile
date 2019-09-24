@@ -26,22 +26,22 @@ generate: generate-tests generate-benchmarks ## Generate all test and benchmarks
 check-generate-unchanged: check-generate-tests-unchanged check-generate-benchmarks-unchanged
 
 generate-tests: ## Generate encoders and test for test objects
-	go run cmd/skyencoder/skyencoder.go -struct DemoStruct -output-file demo_struct_skyencoder_test.go github.com/skycoin/skyencoder/tests
-	go run cmd/skyencoder/skyencoder.go -struct DemoStructOmitEmpty -output-file demo_struct_omit_empty_skyencoder_test.go github.com/skycoin/skyencoder/tests
-	go run cmd/skyencoder/skyencoder.go -struct MaxLenStringStruct1 -output-file max_len_string_struct1_skyencoder_test.go github.com/skycoin/skyencoder/tests
-	go run cmd/skyencoder/skyencoder.go -struct MaxLenStringStruct2 -output-file max_len_string_struct2_skyencoder_test.go github.com/skycoin/skyencoder/tests
-	go run cmd/skyencoder/skyencoder.go -struct MaxLenAllStruct1 -output-file max_len_all_struct1_skyencoder_test.go github.com/skycoin/skyencoder/tests
-	go run cmd/skyencoder/skyencoder.go -struct MaxLenAllStruct2 -output-file max_len_all_struct2_skyencoder_test.go github.com/skycoin/skyencoder/tests
-	go run cmd/skyencoder/skyencoder.go -struct MaxLenNestedSliceStruct1 -output-file max_len_nested_slice_struct1_skyencoder_test.go github.com/skycoin/skyencoder/tests
-	go run cmd/skyencoder/skyencoder.go -struct MaxLenNestedSliceStruct2 -output-file max_len_nested_slice_struct2_skyencoder_test.go github.com/skycoin/skyencoder/tests
-	go run cmd/skyencoder/skyencoder.go -struct MaxLenNestedMapKeyStruct1 -output-file max_len_nested_map_key_struct1_skyencoder_test.go github.com/skycoin/skyencoder/tests
-	go run cmd/skyencoder/skyencoder.go -struct MaxLenNestedMapKeyStruct2 -output-file max_len_nested_map_key_struct2_skyencoder_test.go github.com/skycoin/skyencoder/tests
-	go run cmd/skyencoder/skyencoder.go -struct MaxLenNestedMapValueStruct1 -output-file max_len_nested_map_value_struct1_skyencoder_test.go github.com/skycoin/skyencoder/tests
-	go run cmd/skyencoder/skyencoder.go -struct MaxLenNestedMapValueStruct2 -output-file max_len_nested_map_value_struct2_skyencoder_test.go github.com/skycoin/skyencoder/tests
-	go run cmd/skyencoder/skyencoder.go -struct OnlyOmitEmptyStruct -output-file only_omit_empty_struct_skyencoder_test.go github.com/skycoin/skyencoder/tests
-	go run cmd/skyencoder/skyencoder.go -struct OmitEmptyStruct -output-file omit_empty_struct_skyencoder_test.go github.com/skycoin/skyencoder/tests
-	go run cmd/skyencoder/skyencoder.go -struct OmitEmptyMaxLenStruct1 -output-file omit_empty_max_len_struct1_skyencoder_test.go github.com/skycoin/skyencoder/tests
-	go run cmd/skyencoder/skyencoder.go -struct OmitEmptyMaxLenStruct2 -output-file omit_empty_max_len_struct2_skyencoder_test.go github.com/skycoin/skyencoder/tests
+	go run cmd/skyencoder/skyencoder.go -struct DemoStruct -output-file demo_struct_skyencoder_test.go github.com/SkycoinProject/skyencoder/tests
+	go run cmd/skyencoder/skyencoder.go -struct DemoStructOmitEmpty -output-file demo_struct_omit_empty_skyencoder_test.go github.com/SkycoinProject/skyencoder/tests
+	go run cmd/skyencoder/skyencoder.go -struct MaxLenStringStruct1 -output-file max_len_string_struct1_skyencoder_test.go github.com/SkycoinProject/skyencoder/tests
+	go run cmd/skyencoder/skyencoder.go -struct MaxLenStringStruct2 -output-file max_len_string_struct2_skyencoder_test.go github.com/SkycoinProject/skyencoder/tests
+	go run cmd/skyencoder/skyencoder.go -struct MaxLenAllStruct1 -output-file max_len_all_struct1_skyencoder_test.go github.com/SkycoinProject/skyencoder/tests
+	go run cmd/skyencoder/skyencoder.go -struct MaxLenAllStruct2 -output-file max_len_all_struct2_skyencoder_test.go github.com/SkycoinProject/skyencoder/tests
+	go run cmd/skyencoder/skyencoder.go -struct MaxLenNestedSliceStruct1 -output-file max_len_nested_slice_struct1_skyencoder_test.go github.com/SkycoinProject/skyencoder/tests
+	go run cmd/skyencoder/skyencoder.go -struct MaxLenNestedSliceStruct2 -output-file max_len_nested_slice_struct2_skyencoder_test.go github.com/SkycoinProject/skyencoder/tests
+	go run cmd/skyencoder/skyencoder.go -struct MaxLenNestedMapKeyStruct1 -output-file max_len_nested_map_key_struct1_skyencoder_test.go github.com/SkycoinProject/skyencoder/tests
+	go run cmd/skyencoder/skyencoder.go -struct MaxLenNestedMapKeyStruct2 -output-file max_len_nested_map_key_struct2_skyencoder_test.go github.com/SkycoinProject/skyencoder/tests
+	go run cmd/skyencoder/skyencoder.go -struct MaxLenNestedMapValueStruct1 -output-file max_len_nested_map_value_struct1_skyencoder_test.go github.com/SkycoinProject/skyencoder/tests
+	go run cmd/skyencoder/skyencoder.go -struct MaxLenNestedMapValueStruct2 -output-file max_len_nested_map_value_struct2_skyencoder_test.go github.com/SkycoinProject/skyencoder/tests
+	go run cmd/skyencoder/skyencoder.go -struct OnlyOmitEmptyStruct -output-file only_omit_empty_struct_skyencoder_test.go github.com/SkycoinProject/skyencoder/tests
+	go run cmd/skyencoder/skyencoder.go -struct OmitEmptyStruct -output-file omit_empty_struct_skyencoder_test.go github.com/SkycoinProject/skyencoder/tests
+	go run cmd/skyencoder/skyencoder.go -struct OmitEmptyMaxLenStruct1 -output-file omit_empty_max_len_struct1_skyencoder_test.go github.com/SkycoinProject/skyencoder/tests
+	go run cmd/skyencoder/skyencoder.go -struct OmitEmptyMaxLenStruct2 -output-file omit_empty_max_len_struct2_skyencoder_test.go github.com/SkycoinProject/skyencoder/tests
 
 check-generate-tests-unchanged: ## Check that make generate-tests did not change the code
 	@if [ "$(shell git diff ./tests/demo_struct_skyencoder_test.go | wc -l | tr -d ' ')" != "0" ] ; then echo 'Changes detected after make generate-tests' ; exit 2 ; fi
@@ -78,8 +78,8 @@ check-generate-tests-unchanged: ## Check that make generate-tests did not change
 	@if [ "$(shell git diff ./tests/omit_empty_max_len_struct2_skyencoder_test_test.go | wc -l | tr -d ' ')" != "0" ] ; then echo 'Changes detected after make generate-tests' ; exit 2 ; fi
 
 generate-benchmarks: ## Generate the encoders for the benchmarks
-	go run cmd/skyencoder/skyencoder.go -struct BenchmarkStruct github.com/skycoin/skyencoder/benchmark
-	go run cmd/skyencoder/skyencoder.go -struct SignedBlock -package benchmark -output-path ./benchmark github.com/skycoin/skycoin/src/coin
+	go run cmd/skyencoder/skyencoder.go -struct BenchmarkStruct github.com/SkycoinProject/skyencoder/benchmark
+	go run cmd/skyencoder/skyencoder.go -struct SignedBlock -package benchmark -output-path ./benchmark github.com/SkycoinProject/skycoin/src/coin
 
 check-generate-benchmarks-unchanged: ## Check that make generate-benchmarks did not change the code
 	@if [ "$(shell git diff ./benchmark/benchmark_struct_skyencoder.go | wc -l | tr -d ' ')" != "0" ] ; then echo 'Changes detected after make generate-benchmarks' ; exit 2 ; fi

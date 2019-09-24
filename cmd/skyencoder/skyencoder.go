@@ -9,7 +9,7 @@ import (
 	"path/filepath"
 	"strings"
 
-	"github.com/skycoin/skyencoder"
+	"github.com/SkycoinProject/skyencoder"
 )
 
 const debug = false
@@ -39,7 +39,7 @@ var (
 
 func usage() {
 	fmt.Fprintf(os.Stderr, "Usage of skyencoder:\n")
-	fmt.Fprintf(os.Stderr, "\tskyencoder [flags] -struct T [go import path e.g. github.com/skycoin/skycoin/src/coin]\n")
+	fmt.Fprintf(os.Stderr, "\tskyencoder [flags] -struct T [go import path e.g. github.com/SkycoinProject/skycoin/src/coin]\n")
 	fmt.Fprintf(os.Stderr, "\tskyencoder [flags] -struct T files... # Must be a single package\n")
 	fmt.Fprintf(os.Stderr, "Flags:\n")
 	flag.PrintDefaults()
@@ -95,7 +95,7 @@ func main() {
 		if !os.IsNotExist(err) {
 			log.Fatal(err)
 		}
-		// argument is a import path e.g. "github.com/skycoin/skycoin/src/coin"
+		// argument is a import path e.g. "github.com/SkycoinProject/skycoin/src/coin"
 		destPath, err = skyencoder.FindDiskPathOfImport(structInfo.Package.Path())
 		if err != nil {
 			log.Fatal(err)

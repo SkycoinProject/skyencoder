@@ -12,7 +12,7 @@ import (
 	"golang.org/x/tools/go/loader"
 
 	// needed to verify test output
-	_ "github.com/skycoin/skycoin/src/coin" // needed to verify test output
+	_ "github.com/SkycoinProject/skycoin/src/coin" // needed to verify test output
 )
 
 func removeFile(fn string) {
@@ -78,7 +78,7 @@ func testBuildCode(t *testing.T, structName, filename string) []byte {
 }
 
 func TestBuildSkycoinSignedBlock(t *testing.T) {
-	importPath := "github.com/skycoin/skycoin/src/coin"
+	importPath := "github.com/SkycoinProject/skycoin/src/coin"
 	structName := "SignedBlock"
 
 	fullPath, err := FindDiskPathOfImport(importPath)

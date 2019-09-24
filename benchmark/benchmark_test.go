@@ -5,9 +5,9 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/skycoin/skycoin/src/cipher"
-	"github.com/skycoin/skycoin/src/cipher/encoder"
-	"github.com/skycoin/skycoin/src/coin"
+	"github.com/SkycoinProject/skycoin/src/cipher"
+	"github.com/SkycoinProject/skycoin/src/cipher/encoder"
+	"github.com/SkycoinProject/skycoin/src/coin"
 )
 
 func newBenchmarkStruct() *BenchmarkStruct {

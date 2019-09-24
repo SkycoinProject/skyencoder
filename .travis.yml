@@ -6,12 +6,12 @@ go:
   - tip
 
 install:
-  - go get -t github.com/skycoin/skyencoder/...
-  - go install github.com/skycoin/skyencoder/cmd/skyencoder
+  - go get -t github.com/SkycoinProject/skyencoder/...
+  - go install github.com/SkycoinProject/skyencoder/cmd/skyencoder
 
 script:
   - make check
-  - skyencoder -struct DemoStruct github.com/skycoin/skyencoder/tests
+  - skyencoder -struct DemoStruct github.com/SkycoinProject/skyencoder/tests
 
 notifications:
   # https://github.com/kvld/travisci-telegram TravisCI Telegram Bot integration
